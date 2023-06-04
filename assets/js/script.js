@@ -89,7 +89,7 @@ const imdb = (function () {
     // to search the movie by movie title
     async function getMoviesByTitle(query) {
         try {
-            const response = await fetch('https://omdbapi.com/?t=' + query + '&plot=full&apikey=c933b829');
+            const response = await fetch('https://omdbapi.com/?t=' + query + '&plot=full&apikey=API_KEY');
             const data = await response.json();
             return data;
         } catch (error) {
@@ -102,7 +102,7 @@ const imdb = (function () {
     // to search the movie by movie id
     async function getMoviesById(id) {
         try {
-            const response = await fetch('https://omdbapi.com/?i=' + id + '&plot=full&apikey=c933b829');
+            const response = await fetch('https://omdbapi.com/?i=' + id + '&plot=full&apikey=API_KEY');
             const data = await response.json();
             return data;
         } catch (error) {
